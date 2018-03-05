@@ -53,9 +53,10 @@ namespace NMCT.Resto.iOS
             tabViewModel.Start();
 
             viewController.Title = tabName;
+            viewController.TabBarItem = new UITabBarItem() { Title = tabName };
 
+            return viewController;
 
-            // AFWERKEN
         }
     }
 }
