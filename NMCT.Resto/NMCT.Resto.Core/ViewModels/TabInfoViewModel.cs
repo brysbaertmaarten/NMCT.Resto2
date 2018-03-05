@@ -37,10 +37,11 @@ namespace NMCT.Resto.Core.ViewModels
             }
         }
 
-        private readonly IRestoDataService _restoDataService;
+        protected readonly IRestoDataService _restoDataService;
         public TabInfoViewModel(IRestoDataService restoDataService)
         {
             this._restoDataService = restoDataService;
+            ChooseRandomRestaurant();
         }
 
         private async void ChooseRandomRestaurant()
